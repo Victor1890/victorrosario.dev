@@ -1,16 +1,13 @@
 <script setup lang="ts">
-const appConfig = useAppConfig()
+const appConfig = useAppConfig();
 
 useHead({
   htmlAttrs: {
     lang: appConfig.lang as string,
   },
   title: appConfig.title as string,
-  titleTemplate: (title) =>
-    title !== (appConfig.title as string)
-      ? `${title} · ${appConfig.title}`
-      : title,
-})
+  titleTemplate: (title) => (title !== (appConfig.title as string) ? `${title} · ${appConfig.title}` : title),
+});
 </script>
 <template>
   <NuxtLayout>
@@ -21,33 +18,35 @@ useHead({
 <style>
 .page-enter-active,
 .layout-enter-active {
-  animation: coming 0.4s;
-  animation-delay: 0.2s;
-  opacity: 0;
+  animation: coming 0.28s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .page-leave-active,
 .layout-leave-active {
-  animation: going 0.4s;
+  animation: going 0.18s ease-in;
 }
 
 @keyframes going {
   from {
     opacity: 1;
+    transform: translateY(0);
   }
 
   to {
     opacity: 0;
+    transform: translateY(-8px);
   }
 }
 
 @keyframes coming {
   from {
     opacity: 0;
+    transform: translateY(12px);
   }
 
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 </style>

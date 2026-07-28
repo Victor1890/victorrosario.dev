@@ -18,13 +18,13 @@ const hoverColor: Record<string, string> = {
         <h1 class="m-0 mb-7 font-display font-black uppercase text-slate-50 leading-[0.92] tracking-[-0.02em] text-[clamp(2.75rem,6vw,4.5rem)]">
           {{ $t("about.title") }}
         </h1>
-        <div class="flex flex-col gap-5 text-[16.5px] leading-relaxed text-slate-300 max-w-[62ch]">
+        <div v-reveal class="flex flex-col gap-5 text-[16.5px] leading-relaxed text-slate-300 max-w-[62ch]">
           <p class="m-0">{{ $t("about.bio1") }}</p>
           <p class="m-0">{{ $t("about.bio2") }}</p>
           <p class="m-0">{{ $t("about.bio3") }}</p>
         </div>
-        <div class="flex flex-wrap gap-3.5 mt-8">
-          <NuxtLink v-for="social in socialLinks?.links" :key="social.id" :href="social.url" target="_blank" rel="noopener" class="inline-flex items-center gap-2.5 font-mono text-[13px] border-2 border-ink bg-surface px-4 py-2.5 transition-all hover:-translate-x-0.5 hover:-translate-y-0.5" :class="hoverColor[social.name] || 'hover:bg-cyan hover:text-ink-text'">
+        <div v-reveal="120" class="flex flex-wrap gap-3.5 mt-8">
+          <NuxtLink v-for="social in socialLinks?.links" :key="social.id" :href="social.url" target="_blank" rel="noopener" class="inline-flex items-center gap-2.5 font-mono text-[13px] border-2 border-ink bg-surface px-4 py-2.5 transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-0 active:translate-y-0" :class="hoverColor[social.name] || 'hover:bg-cyan hover:text-ink-text'">
             <Icon :name="social.icon" class="w-[18px] h-[18px]" aria-hidden="true" />
             {{ social.name }}
           </NuxtLink>

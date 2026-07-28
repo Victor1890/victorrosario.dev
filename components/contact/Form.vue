@@ -38,7 +38,7 @@ const labelClass = "block font-display font-bold text-xs uppercase tracking-[0.0
         <label :class="labelClass" for="message">{{ $t("contact.message") }}</label>
         <textarea id="message" v-model="form.message" :class="[inputClass, 'resize-y']" name="message" rows="6" required :placeholder="$t('contact.messagePh')" />
       </div>
-      <button type="submit" aria-label="Send message" class="self-start font-display font-extrabold uppercase text-[15px] text-ink-text bg-yellow border-2 border-ink px-[30px] py-4 shadow-[5px_5px_0_#22d3ee] cursor-pointer transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[7px_7px_0_#22d3ee]">{{ $t("contact.send") }} →</button>
+      <button type="submit" aria-label="Send message" class="self-start font-display font-extrabold uppercase text-[15px] text-ink-text bg-yellow border-2 border-ink px-[30px] py-4 shadow-[5px_5px_0_#22d3ee] cursor-pointer transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[7px_7px_0_#22d3ee] active:translate-x-0 active:translate-y-0 active:shadow-[3px_3px_0_#22d3ee]">{{ $t("contact.send") }} →</button>
     </form>
   </div>
 </template>

@@ -17,7 +17,7 @@ const { educations } = defineProps<{
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-      <article v-for="edu in educations" :key="edu.title" class="edu-card border-2 border-ink bg-surface px-7 py-6">
+      <article v-for="(edu, i) in educations" :key="edu.title" v-reveal="i * 90" class="edu-card border-2 border-ink bg-surface px-7 py-6">
         <span class="inline-block font-mono text-[11px] text-ink-text bg-cyan px-2 py-[3px] mb-3">{{ edu.date }}</span>
         <h3 class="m-0 mb-1 font-grotesk font-semibold text-[19px] text-primary-light">{{ edu.title }}</h3>
         <div class="font-mono text-xs text-yellow mb-3">{{ edu.company }}</div>
@@ -31,11 +31,15 @@ const { educations } = defineProps<{
 .edu-card {
   box-shadow: 6px 6px 0 #6366f1;
   transition:
-    transform 0.15s,
-    box-shadow 0.15s;
+    transform 0.15s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.15s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .edu-card:hover {
   transform: translate(-2px, -2px);
   box-shadow: 8px 8px 0 #6366f1;
+}
+.edu-card:active {
+  transform: translate(0, 0);
+  box-shadow: 5px 5px 0 #6366f1;
 }
 </style>

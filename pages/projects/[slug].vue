@@ -51,7 +51,7 @@ useHead({
           </div>
 
           <div class="flex flex-wrap gap-3.5">
-            <a v-if="doc.previewLink" :href="doc.previewLink" target="_blank" rel="noopener" class="inline-flex items-center gap-2 font-display font-extrabold uppercase text-sm text-white bg-indigo border-2 border-ink px-[22px] py-3.5 shadow-[5px_5px_0_#22d3ee] transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[7px_7px_0_#22d3ee]">
+            <a v-if="doc.previewLink" :href="doc.previewLink" target="_blank" rel="noopener" class="inline-flex items-center gap-2 font-display font-extrabold uppercase text-sm text-white bg-indigo border-2 border-ink px-[22px] py-3.5 shadow-[5px_5px_0_#22d3ee] transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[7px_7px_0_#22d3ee] active:translate-x-0 active:translate-y-0 active:shadow-[3px_3px_0_#22d3ee]">
               <Icon name="i-heroicons-arrow-top-right-on-square" class="w-[18px] h-[18px]" aria-hidden="true" />
               {{ $t("detail.live") }}
             </a>
@@ -69,7 +69,7 @@ useHead({
         <NuxtImg :src="doc.projectImages[0].img" :alt="doc.projectImages[0].title" width="1120" height="600" class="w-full block" />
       </div>
       <div v-if="doc.projectImages.length > 1" class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
-        <div v-for="(img, i) in doc.projectImages.slice(1)" :key="img.id" class="border-2 border-ink" :style="{ boxShadow: `8px 8px 0 ${galleryShadow[i % galleryShadow.length]}` }">
+        <div v-for="(img, i) in doc.projectImages.slice(1)" :key="img.id" v-reveal="(i % 2) * 90" class="border-2 border-ink" :style="{ boxShadow: `8px 8px 0 ${galleryShadow[i % galleryShadow.length]}` }">
           <NuxtImg :src="img.img" :alt="img.title" width="550" height="360" class="w-full h-full object-cover block" />
         </div>
       </div>
@@ -77,11 +77,11 @@ useHead({
 
     <!-- Overview + tech -->
     <section class="mx-auto max-w-[1180px] px-6 pt-16 pb-8 sm:px-10 grid grid-cols-1 lg:grid-cols-[1.6fr_1fr] gap-10 lg:gap-14">
-      <div>
+      <div v-reveal>
         <h2 class="m-0 mb-4 font-display font-black text-[32px] uppercase text-slate-50">{{ $t("detail.overview") }}</h2>
         <ContentRenderer :value="doc" class="prose prose-invert prose-slate max-w-none prose-headings:font-display prose-headings:uppercase prose-a:text-cyan" />
       </div>
-      <div>
+      <div v-reveal="120">
         <h3 class="m-0 mb-4 font-mono text-[13px] text-cyan uppercase tracking-[0.06em]">{{ $t("detail.tech") }}</h3>
         <div class="flex flex-wrap gap-2.5">
           <span v-for="tech in doc.technologies" :key="tech" class="font-mono text-[13px] text-slate-200 border-2 border-ink bg-surface px-3.5 py-[7px]">
@@ -98,7 +98,7 @@ useHead({
         <div class="flex-1 h-0.5 bg-ink" />
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <ProjectsCard v-for="(project, i) in moreProjects(doc.slug)" :key="project._path" :project="project" :accent="projectAccent(i + 1)" :subtitle="`${projectCategory(project).toLowerCase()}/ · ${projectStack(project)}`" subtitle-class="text-yellow" img-class="h-[170px]" />
+        <ProjectsCard v-for="(project, i) in moreProjects(doc.slug)" :key="project._path" v-reveal="i * 100" :project="project" :accent="projectAccent(i + 1)" :subtitle="`${projectCategory(project).toLowerCase()}/ · ${projectStack(project)}`" subtitle-class="text-yellow" img-class="h-[170px]" />
       </div>
     </section>
 

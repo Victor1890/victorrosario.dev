@@ -47,11 +47,15 @@ const isSvg = computed(() => displayImage.value?.endsWith(".svg") ?? false);
 .card {
   box-shadow: 6px 6px 0 var(--accent);
   transition:
-    transform 0.15s,
-    box-shadow 0.15s;
+    transform 0.15s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.15s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .card:hover {
   transform: translate(-3px, -3px);
   box-shadow: 10px 10px 0 var(--accent);
+}
+.card:active {
+  transform: translate(0, 0);
+  box-shadow: 4px 4px 0 var(--accent);
 }
 </style>
