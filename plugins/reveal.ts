@@ -48,7 +48,11 @@ export default defineNuxtPlugin((nuxtApp) => {
             obs.unobserve(entry.target); // reveal-once
           }
         },
-        { threshold: 0.2, rootMargin: "0px 0px -8% 0px" },
+        // threshold 0: reveal as soon as any part enters. A higher threshold
+        // can never be met by blocks taller than the viewport (e.g. long
+        // project overviews), leaving their text stuck hidden. The negative
+        // bottom rootMargin still delays the trigger past the first pixel.
+        { threshold: 0, rootMargin: "0px 0px -8% 0px" },
       );
 
       observer.observe(el);
