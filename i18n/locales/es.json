@@ -27,10 +27,10 @@
   "about": {
     "label": "// biografía",
     "title": "Sobre mí",
-    "bio1": "Hola, soy Sinver Aguiló, Ingeniero de Software con más de 9 años de experiencia construyendo aplicaciones web de nivel empresarial que escalan para responder a las demandas de sus usuarios.",
-    "bio2": "Mi especialidad es crear aplicaciones front-end robustas y escalables con Vue.js, React.js y Angular, y también domino la construcción de microservicios con Node.js y PHP. He liderado el diseño de arquitectura de grandes proyectos de migración — de monolitos legados a estructuras cliente-servidor y microservicios modernos — para productos como Corotos, NZXT y Crunchyroll.",
-    "bio3": "A lo largo de mi carrera me he comprometido a hacer las cosas bien y a sacarlas adelante. Me desenvuelvo mejor en entornos colaborativos que valoran la innovación y la experimentación, y aporto un enfoque orientado a resultados a cada equipo del que formo parte.",
-    "location": "Santo Domingo, DO",
+    "bio1": "Hola, soy Victor Rosario, Ingeniero de Software Senior con más de 6 años de experiencia profesional construyendo aplicaciones web escalables y de producción usando JavaScript/TypeScript, React, Node.js y PostgreSQL.",
+    "bio2": "Integro funcionalidades potenciadas por IA usando APIs de LLM (OpenAI, Claude), permitiendo la automatización de flujos de trabajo y mejorando la velocidad de procesamiento de datos en ~50%. He contribuido a plataformas de alto tráfico como gob.do y sistemas internos que soportan miles de usuarios concurrentes.",
+    "bio3": "Me enfoco en arquitectura limpia, confiabilidad del sistema, optimización de rendimiento y desarrollo orientado a pruebas. Estoy cómodo tomando decisiones técnicas pragmáticas, mentorizando a compañeros de equipo y entregando soluciones de alto impacto.",
+    "location": "República Dominicana",
     "experienceTitle": "Experiencia",
     "educationTitle": "Educación",
     "roles": "roles"

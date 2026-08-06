@@ -1,7 +1,7 @@
 export default defineAppConfig({
-  title: "Sinver Aguilo",
+  title: "Victor Rosario",
   lang: "en",
-  url: "https://www.sinveraguilo.com",
-  description: "Hi, I'm Sinver Aguiló, web developer in Santo Domingo, República Dominicana.",
+  url: "https://www.victorrosario.dev",
+  description: "Hi, I'm Victor Rosario, Senior Software Engineer in Dominican Republic.",
   ui: {},
 });

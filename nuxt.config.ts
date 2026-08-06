@@ -29,7 +29,7 @@ export default defineNuxtConfig({
     langDir: "i18n/locales",
     detectBrowserLanguage: {
       useCookie: true,
-      cookieKey: "sinver_lang",
+      cookieKey: "victor_lang",
       redirectOn: "root",
       alwaysRedirect: true,
     },
@@ -83,7 +83,7 @@ export default defineNuxtConfig({
     pageTransition: { name: "page", mode: "out-in" },
     layoutTransition: { name: "layout", mode: "out-in" },
     head: {
-      title: "Sinver Aguiló",
+      title: "Victor Rosario",
       htmlAttrs: { lang: "en" },
       bodyAttrs: { class: "antialiased" },
       meta: [
@@ -92,13 +92,13 @@ export default defineNuxtConfig({
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         // { name: "keywords", content: "" },
         { name: "format-detection", content: "telephone=no" },
-        // { name: "description", content: "Hi, I'm Sinver Aguiló, web developer in Santo Domingo, República Dominicana." },
+        // { name: "description", content: "Hi, I'm Victor Rosario, Senior Software Engineer in Dominican Republic." },
 
         // // Open Graph / Facebook
         // { property: "og:type", content: "website" },
-        // { property: "og:url", content: "https://www.sinveraguilo.com" },
-        // { property: "og:title", content: "Sinver Aguiló" },
-        // { property: "og:description", content: "Hi, I'm Sinver Aguiló, web developer in Santo Domingo, República Dominicana." },
+        // { property: "og:url", content: "https://www.victorrosario.dev" },
+        // { property: "og:title", content: "Victor Rosario" },
+        // { property: "og:description", content: "Hi, I'm Victor Rosario, Senior Software Engineer in Dominican Republic." },
         // { property: "og:image", content: "/images/logo.png" },
       ],
       link: [
@@ -114,7 +114,7 @@ export default defineNuxtConfig({
         //   defer: true,
         //   src: "https://plausible.io/js/plausible.js",
         //   type: "text/partytown",
-        //   "data-domain": "https://www.sinveraguilo.com",
+        //             "data-domain": "https://www.victorrosario.dev",
         // },
       ],
     },
@@ -122,7 +122,7 @@ export default defineNuxtConfig({
 
   image: {
     format: ["webp"],
-    // domains: isDev ? ["localhost"] : ["sinveraguilo.com"],
+    // domains: isDev ? ["localhost"] : ["victorrosario.dev"],
   },
 
   css: ["~/assets/styles/tailwind.css", "~/assets/styles/main.css"],

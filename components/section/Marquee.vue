@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const items = ["Corotos", "NZXT", "Crunchyroll", "Microservices", "Vue.js", "9+ Years"];
+const items = ["React", "Node.js", "PostgreSQL", "TypeScript", "AI/LLM", "6+ Years"];
 </script>
 
 <template>

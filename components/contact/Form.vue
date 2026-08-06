@@ -9,7 +9,7 @@ const form = ref({
 function sendEmail() {
   const { name, email, subject, message } = form.value;
   const body = `${message}\n\n${name}\n${email}`;
-  window.location.href = `mailto:hello@sinveraguilo.com?subject=${encodeURIComponent(`${subject} - ${name}`)}&body=${encodeURIComponent(body)}`;
+  window.location.href = `mailto:victorrosariodeveloper@gmail.com?subject=${encodeURIComponent(`${subject} - ${name}`)}&body=${encodeURIComponent(body)}`;
 }
 
 const inputClass = "w-full box-border border-2 border-ink bg-primary-dark text-primary-light font-sans text-[15px] px-3.5 py-3 outline-hidden focus:border-cyan";

@@ -1,11 +1,13 @@
 {
-  "company": "BairesDev · Contractor",
-  "position": "Salesforce Email Developer",
-  "date": "Feb 2022 - Nov 2025 · 3 yrs 10 mos",
-  "location": "United States · Remote",
-  "skills": ["HTML", "SASS", "jQuery", "AMPscript", "Salesforce Marketing Cloud", "Agile Methodologies"],
+  "company": "Yo Navego Seguro · Employee",
+  "position": "Software Developer",
+  "date": "Nov 2020 – Mar 2021",
+  "location": "Dominican Republic",
+  "skills": ["JavaScript", "Node.js"],
   "description": [
-    "As a contractor for one of BairesDev's clients, I was responsible for creating and maintaining operational emails for multiple commercial brands. My duties included implementing HTML and CSS styles using SASS, writing AMPscript for dynamic content, and ensuring compliance with email marketing best practices. I worked closely with the client's marketing team to ensure that all email copy was translated accurately and that the emails were visually appealing and effective. This role required me to be highly organized, detail-oriented, and responsive to tight deadlines."
+    "Modernized legacy codebases to align with current JavaScript and Node.js best practices.",
+    "Worked closely with project managers to define realistic milestones and deliver incremental value.",
+    "Improved overall maintainability and performance of pre-release software projects."
   ],
   "images": []
 }

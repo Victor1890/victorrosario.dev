@@ -1,11 +1,13 @@
 {
-  "company": "Ensitech · Contractor",
-  "position": "Frontend Engineer",
-  "date": "Mar 2025 - Jul 2025 · 5 mos",
-  "location": "Remote",
-  "skills": ["Vue.js", "TypeScript", "CSS"],
+  "company": "Marena Beach Residences · Employee",
+  "position": "Website Developer",
+  "date": "Jul 2020 – Nov 2020",
+  "location": "Dominican Republic",
+  "skills": ["HTML", "JavaScript", "Node.js", "SQL"],
   "description": [
-    "I joined Ensitech on a short-term contract as a Frontend Engineer, building user-facing features with Vue.js and TypeScript. I worked closely with the team to deliver responsive, maintainable UI components within tight timelines."
+    "Built responsive, SEO-optimized websites by translating designs into functional web pages using HTML, JavaScript, AJAX, and JSON.",
+    "Integrated backend services with Node.js and SQL databases to support dynamic content.",
+    "Delivered scalable and maintainable solutions aligned with business and marketing goals."
   ],
   "images": []
 }

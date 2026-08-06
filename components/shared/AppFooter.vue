@@ -14,8 +14,8 @@ const hoverColor: Record<string, string> = {
   <footer class="border-t-2 border-ink bg-footer-dark">
     <div class="mx-auto max-w-[1180px] px-6 py-14 sm:px-10 flex flex-wrap items-center justify-between gap-6">
       <div class="flex items-center gap-3.5">
-        <img src="/images/logo.png" alt="Sinver Aguiló" class="h-11" width="44" height="44" />
-        <span class="font-mono text-dim text-[13px]">© 2026 · Sinver Aguiló</span>
+        <img src="/images/logo.png" alt="Victor Rosario" class="h-11" width="44" height="44" />
+        <span class="font-mono text-dim text-[13px]">© 2026 · Victor Rosario</span>
       </div>
 
       <div class="flex items-center gap-4">
