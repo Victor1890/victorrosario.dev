@@ -6,14 +6,14 @@ function titleTemplate(title) {
   return title !== (appConfig.title as string) ? `${appConfig.title} · ${title}` : title;
 }
 
-let seoMetaOptions: Record<string, string> = {
+const seoMetaOptions: Record<string, string> = {
   title: titleTemplate(route.meta.title || appConfig.title),
   url: appConfig.url + route.path,
   description: (route.meta.description as string) || appConfig.description,
   icon: "/images/og-logo.png",
 };
 
-const ogImage = route.meta.image ? route.meta.image : "/images/og-image.png";
+const ogImage = route.meta.image ? route.meta.image : "/images/og-image.jpg";
 seoMetaOptions.ogImage = ogImage;
 seoMetaOptions.twitterImage = ogImage;
 
