@@ -28,8 +28,8 @@ watch(
     <nav class="mx-auto max-w-[1180px] flex items-center justify-between gap-6 px-6 py-[18px] sm:px-8">
       <!-- Logo -->
       <NuxtLink to="/" class="flex items-center gap-3" aria-label="Home">
-        <img src="/images/logo.png" alt="Sinver Aguiló" class="h-10 block" width="40" height="40" />
-        <span class="font-mono text-cyan text-[13px] hidden sm:inline">~/savaf</span>
+        <img src="/images/logo.png" alt="Victor Rosario" class="h-10 block" width="45" height="45" />
+        <span class="font-mono text-cyan text-[13px] hidden sm:inline">~/victorrosario</span>
       </NuxtLink>
 
       <!-- Desktop nav -->

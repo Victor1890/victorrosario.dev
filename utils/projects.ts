@@ -18,6 +18,9 @@ export function projectCategory(project: ProjectLike): string {
   const tags = project.tags || [];
   if (tags.includes("Landing")) return "Landing";
   if (tags.includes("Frontend")) return "Frontend";
+  if (tags.includes("Backend")) return "Backend";
+  if (tags.includes("Open Source")) return "Open Source";
+  if (tags.includes("Design")) return "Design";
   return tags[0] || "Project";
 }
 

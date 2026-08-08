@@ -1,11 +1,15 @@
 {
-  "company": "BairesDev · Contractor",
-  "position": "Frontend Web Developer",
-  "date": "Mar 2025 - Present · 1 yr 5 mos",
-  "location": "United States · Remote",
-  "skills": ["Vue.js", "JavaScript", "Vuex", "Pinia", "SASS", "CSS", "Vite", "Agile Methodologies"],
+  "company": "Media Revolution, SRL · Employee",
+  "position": "Full-Stack Developer",
+  "date": "Sep 2021 – Sep 2023",
+  "location": "Dominican Republic",
+  "skills": ["React", "Node.js", "PostgreSQL", "Next.js", "Astro", "OpenAI", "Claude", "Contentful"],
   "description": [
-    "As a contractor for one of BairesDev's US-based clients, I build and maintain front-end features for a production Vue.js application. My work covers state management with Vuex and Pinia, styling with SASS, and a Vite-based build setup, delivering iteratively as part of an Agile team."
+    "Developed and maintained end-to-end web applications using React, Node.js, and PostgreSQL.",
+    "Led content migration from WordPress to Contentful, building automation scripts and delivering content through custom web platforms with Next.js and Astro.",
+    "Integrated AI services (OpenAI, Claude) to automate content generation and transformation workflows.",
+    "Built internal tools leveraging AI for structured data extraction, content enrichment, and automation pipelines.",
+    "Implemented backend orchestration for AI requests, including prompt handling, response parsing, retries, and error handling."
   ],
   "images": []
 }

@@ -32,7 +32,7 @@ const hoverColor: Record<string, string> = {
       </div>
 
       <div class="relative flex items-stretch bg-surface min-h-[360px]">
-        <NuxtImg src="/images/portrait.jpg" alt="Sinver Aguiló" width="480" height="522" class="w-full object-cover grayscale contrast-[1.05]" />
+        <NuxtImg src="/images/portrait.jpg" alt="Victor Rosario" width="480" height="522" class="w-full object-cover grayscale contrast-[1.05]" />
         <div class="absolute left-0 bottom-0 font-mono font-bold text-xs text-ink-text bg-yellow px-3.5 py-2 border-t-2 border-r-2 border-ink">
           {{ $t("about.location") }}
         </div>

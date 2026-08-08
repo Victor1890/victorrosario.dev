@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const stats = [
-  { value: "9+", color: "text-yellow", label: "stats.experience" },
+  { value: "6+", color: "text-yellow", label: "stats.experience" },
   { value: "10+", color: "text-cyan", label: "stats.clients" },
   { value: "20+", color: "text-indigo", label: "stats.projects" },
 ];

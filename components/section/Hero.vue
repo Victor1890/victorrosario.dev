@@ -1,5 +1,15 @@
 <script setup lang="ts">
-const techs = ["Vue", "React", "Node", "TypeScript", "Angular"];
+const techs = [
+  "React",
+  "Python",
+  "Next.js",
+  "Node",
+  "TypeScript",
+  "PostgreSQL",
+  "LLMs",
+  "Tailwind",
+  "Docker",
+];
 </script>
 
 <template>
@@ -13,7 +23,7 @@ const techs = ["Vue", "React", "Node", "TypeScript", "Angular"];
           {{ $t("hero.available") }}
         </div>
 
-        <h1 class="hero-enter m-0 font-display font-black uppercase text-slate-50 leading-[0.9] tracking-[-0.02em] text-[clamp(3.25rem,7vw,5.25rem)]" style="--i: 1">Sinver<br /><span class="text-cyan">Aguiló</span></h1>
+        <h1 class="hero-enter m-0 font-display font-black uppercase text-slate-50 leading-[0.9] tracking-[-0.02em] text-[clamp(3.25rem,7vw,5.25rem)]" style="--i: 1">Victor<br /><span class="text-cyan">Rosario</span></h1>
 
         <p class="hero-enter mt-5 font-mono text-[15px] leading-relaxed text-yellow max-w-[40ch]" style="--i: 2"><span class="text-dim">const role = </span>"{{ $t("hero.eyebrow") }}"</p>
 
@@ -27,7 +37,7 @@ const techs = ["Vue", "React", "Node", "TypeScript", "Angular"];
             <NuxtLink to="/projects" class="font-display font-extrabold uppercase text-[15px] bg-indigo text-white px-[26px] py-[15px] border-r-2 border-ink">
               {{ $t("hero.ctaWork") }}
             </NuxtLink>
-            <a href="/Sinver-Aguilo-CV.pdf" download class="font-display font-extrabold uppercase text-[15px] bg-primary-dark text-primary-light px-[26px] py-[15px]">
+            <a href="/Victor-Rosario-CV.pdf" download class="font-display font-extrabold uppercase text-[15px] bg-primary-dark text-primary-light px-[26px] py-[15px]">
               {{ $t("hero.ctaCV") }}
             </a>
           </div>
@@ -43,7 +53,7 @@ const techs = ["Vue", "React", "Node", "TypeScript", "Angular"];
 
       <!-- Right -->
       <div class="hero-enter relative flex items-stretch bg-surface min-h-[420px]" style="--i: 2">
-        <NuxtImg src="/images/portrait.jpg" alt="Sinver Aguiló" width="575" height="522" class="w-full object-cover grayscale contrast-[1.05]" />
+        <NuxtImg src="/images/portrait.jpg" alt="Victor Rosario" width="575" height="522" class="w-full object-cover grayscale contrast-[1.05]" />
         <div class="absolute left-0 bottom-0 font-mono font-bold text-xs text-ink-text bg-cyan px-3.5 py-2 border-t-2 border-r-2 border-ink">
           {{ $t("hero.label") }}
         </div>
