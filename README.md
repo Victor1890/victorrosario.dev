@@ -1,75 +1,77 @@
-# Nuxt 3 Minimal Starter
+# victorrosario.dev
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Senior Software Engineer portfolio built with Nuxt.js.
 
-## Setup
+## Tech Stack
 
-Make sure to install the dependencies:
+- **Framework:** Nuxt 3 + Vue 3
+- **Styling:** Tailwind CSS 4
+- **Language:** TypeScript
+- **Content:** @nuxt/content (Markdown)
+- **i18n:** English / Spanish
+- **Fonts:** Google Fonts (Inter, Archivo, Space Grotesk, JetBrains Mono)
+- **Images:** @nuxt/image (WebP)
+
+## Features
+
+- Responsive portfolio with dark theme
+- Blog (9 posts — Node.js, React, ORMs, performance)
+- Projects showcase (9 projects)
+- About section with experience & education
+- Contact form
+- SEO optimized with Open Graph
+- Bilingual (EN/ES) via @nuxtjs/i18n
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js v22+
+- pnpm
+
+### Setup
 
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+### Development
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+pnpm dev
 ```
 
-## Production
-
-Build the application for production:
+### Production
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+pnpm build
+pnpm preview
 ```
 
-Locally preview production build:
+## Project Structure
 
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+```
+components/    # Vue components (hero, bio, projects, blog)
+content/       # Markdown files (blog, projects, bio)
+layouts/       # App layouts
+pages/         # Route pages (home, about, blog, projects, contact)
+public/        # Static assets (images)
+i18n/          # Translation files (en.json, es.json)
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Deployment
+
+Ready for Vercel, Netlify, or any Node.js hosting.
+See [Nuxt deployment docs](https://nuxt.com/docs/getting-started/deployment).
+
+## Author
+
+**Victor Rosario** — Senior Software Engineer
+
+- Website: [victorrosario.dev](https://www.victorrosario.dev)
+- GitHub: [Victor1890](https://github.com/Victor1890)
+- LinkedIn: [victor-j-rosario-v](https://www.linkedin.com/in/victor-j-rosario-v)
+
+## License
+
+MIT
