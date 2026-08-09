@@ -35,38 +35,10 @@ export default defineNuxtConfig({
     },
   },
 
-  routeRules: {
-    "/**": isDev
-      ? {}
-      : {
-          // isr: 60,
-          cache: {
-            swr: true,
-            maxAge: 120,
-            staleMaxAge: 60,
-            headersOnly: true,
-          },
-        },
-    // "/": isDev
-    //   ? {}
-    //   : {
-    //       prerender: true,
-    //     },
-    // "/api/*": isDev
-    //   ? {}
-    //   : {
-    //       cache: { maxAge: 60 * 60 },
-    //     },
-  },
-
   nitro: {
     prerender: {
       autoSubfolderIndex: false,
     },
-    // prerender: {
-    //   crawlLinks: true,
-    //   routes: ["/sitemap.xml", "/robots.txt"],
-    // },
   },
 
   runtimeConfig: {
