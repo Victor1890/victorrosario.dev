@@ -3,7 +3,7 @@ const route = useRoute();
 
 const { data: relatedProjects } = await useAsyncData("projects", () => {
   return queryContent("projects")
-    .where({ $not: { slug: route.params.slug } })
+    .where({ _path: /^\/projects\//, $not: { slug: route.params.slug } })
     .limit(4)
     .only(["title", "category", "img", "slug"])
     .find();

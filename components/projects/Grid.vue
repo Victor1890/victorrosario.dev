@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { data: projects } = await useAsyncData("all_projects", () => {
-  return queryContent("projects").find();
+  return queryContent("projects").where({ _path: /^\/projects\// }).find();
 });
 
 const activeFilter = ref("All");

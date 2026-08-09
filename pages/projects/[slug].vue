@@ -10,7 +10,7 @@ if (!doc.value) {
 }
 
 const { data: allProjects } = await useAsyncData("detail_more_projects", () => {
-  return queryContent("projects").find();
+  return queryContent("projects").where({ _path: /^\/projects\// }).find();
 });
 
 const tagAccent = ["bg-yellow", "bg-cyan", "bg-indigo text-white"];

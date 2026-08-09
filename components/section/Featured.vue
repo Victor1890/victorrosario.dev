@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { data: projects } = await useAsyncData("featured_projects", () => {
-  return queryContent("projects").limit(3).find();
+  return queryContent("projects").where({ _path: /^\/projects\// }).limit(3).find();
 });
 </script>
 
