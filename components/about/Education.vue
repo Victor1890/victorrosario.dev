@@ -29,17 +29,17 @@ const { educations } = defineProps<{
 
 <style scoped>
 .edu-card {
-  box-shadow: 6px 6px 0 #6366f1;
+  box-shadow: 6px 6px 0 #a855f7;
   transition:
     transform 0.15s cubic-bezier(0.16, 1, 0.3, 1),
     box-shadow 0.15s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .edu-card:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 8px 8px 0 #6366f1;
+  box-shadow: 8px 8px 0 #a855f7;
 }
 .edu-card:active {
   transform: translate(0, 0);
-  box-shadow: 5px 5px 0 #6366f1;
+  box-shadow: 5px 5px 0 #a855f7;
 }
 </style>

@@ -8,7 +8,7 @@ body {
 }
 
 ::selection {
-  background: #facc15;
+  background: #f97316;
   color: #0b1622;
 }
 
@@ -38,7 +38,7 @@ textarea::placeholder {
 
 /* Keyboard focus ring, neo-brutalist (mouse clicks stay clean via :focus-visible) */
 :focus-visible {
-  outline: 3px solid #facc15;
+  outline: 3px solid #f97316;
   outline-offset: 2px;
 }
 

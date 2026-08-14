@@ -14,7 +14,7 @@ const { data: allProjects } = await useAsyncData("detail_more_projects", () => {
 });
 
 const tagAccent = ["bg-yellow", "bg-cyan", "bg-indigo text-white"];
-const galleryShadow = ["#22d3ee", "#facc15", "#6366f1"];
+const galleryShadow = ["#f43f5e", "#f97316", "#a855f7"];
 
 function moreProjects(slug: string) {
   return (allProjects.value || []).filter((p: any) => p.slug !== slug).slice(0, 2);
@@ -51,7 +51,7 @@ useHead({
           </div>
 
           <div class="flex flex-wrap gap-3.5">
-            <a v-if="doc.previewLink" :href="doc.previewLink" target="_blank" rel="noopener" class="inline-flex items-center gap-2 font-display font-extrabold uppercase text-sm text-white bg-indigo border-2 border-ink px-[22px] py-3.5 shadow-[5px_5px_0_#22d3ee] transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[7px_7px_0_#22d3ee] active:translate-x-0 active:translate-y-0 active:shadow-[3px_3px_0_#22d3ee]">
+            <a v-if="doc.previewLink" :href="doc.previewLink" target="_blank" rel="noopener" class="inline-flex items-center gap-2 font-display font-extrabold uppercase text-sm text-white bg-indigo border-2 border-ink px-[22px] py-3.5 shadow-[5px_5px_0_#f43f5e] transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[7px_7px_0_#f43f5e] active:translate-x-0 active:translate-y-0 active:shadow-[3px_3px_0_#f43f5e]">
               <Icon name="i-heroicons-arrow-top-right-on-square" class="w-[18px] h-[18px]" aria-hidden="true" />
               {{ $t("detail.live") }}
             </a>
