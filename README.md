@@ -70,7 +70,7 @@ See [Nuxt deployment docs](https://nuxt.com/docs/getting-started/deployment).
 
 - Website: [victorrosario.dev](https://www.victorrosario.dev)
 - GitHub: [Victor1890](https://github.com/Victor1890)
-- LinkedIn: [victor-j-rosario-v](https://www.linkedin.com/in/victor-j-rosario-v)
+- LinkedIn: [victor-j-rosario-v](https://www.linkedin.com/in/victor-rosario-dev)
 
 ## License
 
